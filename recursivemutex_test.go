@@ -29,10 +29,10 @@ func TestRecursiveMutex_Lock(t *testing.T) {
 	c := &counter{}
 	wg := &sync.WaitGroup{}
 	wg.Add(5)
-	for i := range 5 {
+	for i := 0; i < 5; i++ {
 		index := i
 		go func() {
-			for range 5 {
+			for j := 0; j < 5; j++ {
 				c.augment(index)
 			}
 			wg.Done()
