@@ -3,7 +3,7 @@ module github.com/SokaDance/rmx
 go 1.19
 
 require (
-	github.com/petermattis/goid v0.0.0-20250303134427-723919f7f203
+	github.com/petermattis/goid v0.0.0-20250904145737-900bdf8bb490
 	github.com/stretchr/testify v1.10.0
 )
 
